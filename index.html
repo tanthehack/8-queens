@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Queens GA Algorithm</title>
+    <style>
+
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+
+      .chessboards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+      }
+      
+      .chessboard {
+          display: grid;
+          grid-template-columns: repeat(8, 70px);
+          grid-template-rows: repeat(8, 70px);
+          margin: 10px;
+          border: 3px solid #d18b47;
+      }
+
+      .square {
+        width: 70px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2em;
+      }
+
+      .light {
+          background-color: #fece9e;
+      }
+
+      .dark {
+          background-color: #d18b47;
+      }
+  </style>
+</head>
+<body>
+  <div class="chessboards">
+    <h1>Initial Configuration</h1>
+    <h1>Final Configuration</h1>
+    <div id="initial-chessboard" class="chessboard"></div>
+    <div id="chessboard" class="chessboard"></div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
